@@ -1,25 +1,32 @@
 # copywriter-youtube-facebook
 
-Agent skill — แปลง transcript/summary เป็นโพสต์ Facebook ภาษาไทย "พร้อมโพสต์ทันที"
+**Turns a raw transcript into a ready-to-post Thai Facebook update — sharp, human, and allergic to hallucination.**
 
-## ทำอะไร / What it does
+Feeds it only what you give it. The skill enforces a strict evidence rule: no invented numbers, quotes, or outcomes; if the material is thin, it asks for more instead of padding. Then it writes with a mobile-first rhythm:
 
-เขียนโพสต์ FB จากข้อมูลจริงที่ผู้ใช้ให้เท่านั้น (กฎ no-hallucination เข้ม) โครง Hook → Expand → Break expectation → Insight → Takeaway → CTA อ่านแล้วเหมือนคนจริงเขียน ไม่ใช้ emoji ไม่ใช้คำกลาง ๆ
+**Hook → Expand → Break expectation → Insight → Takeaway → CTA**
 
-## ใช้เมื่อไหร่ / When to use
+## House rules (baked into the skill)
 
-"เขียนโพสต์ Facebook/แปลง transcript เป็นโพสต์/โพสต์จากคลิปนี้" หรือต้องการคอนเทนต์ไทยสำหรับ FB feed
+- Two-line hook that stops the thumb
+- One idea per paragraph, generous whitespace
+- At least one genuine insight — never a summary
+- Conversational but professional; reads like a person, not a template
+- No emoji, no filler openers ("ในยุคปัจจุบัน…" is banned on sight)
 
-## ติดตั้ง / Install
+## Use it when
 
-ใช้ได้กับ agent ที่รองรับ skills (Claude Code, Codex, OpenCode, ฯลฯ):
+- You have a transcript, interview, or case summary and want a Facebook post the same day
+- The audience is Thai and reads on a phone
+- You would rather have "not enough data" than a confident fabrication
+
+## Install
 
 ```bash
 npx skills add fancyism/copywriter-youtube-facebook
 ```
 
-หรือคัดลอกโฟลเดอร์นี้ไปไว้ใน skill directory ของ agent คุณ (เช่น `~/.claude/skills/` หรือ `~/.agents/skills/`) แล้วเปิด session ใหม่
-
+Or copy this folder into your agent's skill directory and start a new session.
 
 ## License
 
