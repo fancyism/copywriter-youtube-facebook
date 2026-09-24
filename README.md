@@ -15,7 +15,7 @@ Agent skill — แปลง transcript/summary เป็นโพสต์ Face
 ใช้ได้กับ agent ที่รองรับ skills (Claude Code, Codex, OpenCode, ฯลฯ):
 
 ```bash
-npx skills add kanomwhandev/copywriter-youtube-facebook
+npx skills add fancyism/copywriter-youtube-facebook
 ```
 
 หรือคัดลอกโฟลเดอร์นี้ไปไว้ใน skill directory ของ agent คุณ (เช่น `~/.claude/skills/` หรือ `~/.agents/skills/`) แล้วเปิด session ใหม่
